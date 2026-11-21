@@ -1,0 +1,14 @@
+طريقة استخراج APK من الهاتف فقط (عبر GitHub Actions)
+
+1) افتح github.com من الهاتف وسجّل الدخول أو أنشئ حساباً.
+2) أنشئ Repository جديداً باسم MADAR-TECH-Android واجعله Public أو Private.
+3) فك ضغط MADAR_TECH_Android_Source.zip، ثم ارفع محتويات مجلد MADAR_TECH_Android إلى المستودع (يجب أن يظهر app وملفا build.gradle وsettings.gradle ومجلد .github في الجذر).
+4) بعد اكتمال الرفع، افتح تبويب Actions في المستودع.
+5) اختر Build MADAR TECH APK ثم Run workflow.
+6) انتظر حتى تصبح العملية خضراء، افتح نتيجة التشغيل، ثم نزّل Artifact باسم MADAR-TECH-debug-apk.
+7) فك ضغط الملف الناتج، وستجد app-debug.apk. افتحه على هاتف Android واسمح بالتثبيت من هذا المصدر عند الطلب.
+
+ملاحظات:
+- هذا Debug APK للتجربة الأولية فقط، وليس إصدار متجر Google Play موقّعاً بمفتاح إصدار نهائي.
+- هذه النسخة تعرض كتالوجاً محلياً وصوراً توضيحية. لا توجد مزامنة بعد مع موقع MADAR TECH أو قاعدة بيانات مشتركة.
+- لا ترفع كلمات مرور أو مفاتيح توقيع إلى مستودع GitHub.
